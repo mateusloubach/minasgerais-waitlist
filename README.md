@@ -1,1 +1,1 @@
-# minasgerais-waitlist
+# Waitlist
