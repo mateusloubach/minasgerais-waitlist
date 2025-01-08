@@ -7,9 +7,9 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js + Notion — Waitlist Template",
+  title: "Minas Gerais",
   description:
-    "A simple Next.js waitlist template with Notion as CMS and Resend to send emails created with React Email and Upstash Redis for rate limiting. Deployed on Vercel.",
+    "Lista de espera para a plataforma minasgerais.io, com utilização das ferramentas Next.Js e Notion como banco de dados e CMS. Resend para envio de e-mail e Upstash Redis para limitação de envios. Deploy realizado em Vercel.",
 };
 
 export default function RootLayout({

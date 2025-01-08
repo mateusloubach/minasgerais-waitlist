@@ -23,19 +23,19 @@ export default function Logos() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-2xl font-medium tracking-tight text-zinc-200 md:text-3xl"
-          text="Powered by"
+          text="Em breve!"
         />
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-base text-zinc-300 sm:text-lg"
-          text="Simple and powerful tools that help you build faster"
+          text="Assine a nossa lista de espera para ser notificado quando o site estiver pronto!"
           duration={0.8}
         />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={itemVariants}
         className="mt-4 grid w-full grid-cols-2 items-center justify-center gap-4 md:mt-6 md:grid-cols-3 md:gap-6">
         {logos.map((logo, index) => (
@@ -54,7 +54,7 @@ export default function Logos() {
             />
           </Link>
         ))}
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }

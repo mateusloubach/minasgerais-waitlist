@@ -29,12 +29,12 @@ export default function Home() {
 
   const handleSubmit = async () => {
     if (!name || !email) {
-      toast.error("Please fill in all fields 😠");
+      toast.error("Preencha todos os campos");
       return;
     }
 
     if (!isValidEmail(email)) {
-      toast.error("Please enter a valid email address 😠");
+      toast.error("Insira um Email válido");
       return;
     }
 
@@ -56,7 +56,7 @@ export default function Home() {
           if (mailResponse.status === 429) {
             reject("Rate limited");
           } else {
-            reject("Email sending failed");
+            reject("Envio de Email falhou");
           }
           return; // Exit the promise early if mail sending fails
         }
@@ -74,7 +74,7 @@ export default function Home() {
           if (notionResponse.status === 429) {
             reject("Rate limited");
           } else {
-            reject("Notion insertion failed");
+            reject("Ops.. ocorreu um erro do nosso lado"); // Notion insertion failed
           }
         } else {
           resolve({ name });
@@ -89,17 +89,17 @@ export default function Home() {
       success: (data) => {
         setName("");
         setEmail("");
-        return "Thank you for joining the waitlist 🎉";
+        return "🎉 Aee! Você agora está na lista exclusiva de espera da plataforma!";
       },
       error: (error) => {
         if (error === "Rate limited") {
-          return "You're doing that too much. Please try again later";
+          return "Calma lá, uai.. Cê ta tentando isso demais.";
         } else if (error === "Email sending failed") {
-          return "Failed to send email. Please try again 😢.";
+          return "uai.. faiô. Tenta esse trem dinovo.";
         } else if (error === "Notion insertion failed") {
-          return "Failed to save your details. Please try again 😢.";
+          return "Lascou tudo. Cê pode tentá dinovo.";
         }
-        return "An error occurred. Please try again 😢.";
+        return "Uai sô, deu ruim demais. Tenta dinovo mais tarde.";
       },
     });
 
