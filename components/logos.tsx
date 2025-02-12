@@ -23,9 +23,15 @@ export default function Logos() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-2xl font-medium tracking-tight text-zinc-200 md:text-3xl"
-          text="Em breve!"
+          text="Bem vindo ao mais novo Hub de Minas Gerais!"
         />
       </motion.div>
+      {/* <motion.div variants={itemVariants}>
+        <TextBlur
+          className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
+          text="Bem vindo ao mais novo site de Minas Gerais!"
+        />
+      </motion.div> */}
 
       <motion.div variants={itemVariants}>
         <TextBlur

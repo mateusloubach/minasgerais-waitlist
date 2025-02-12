@@ -85,11 +85,11 @@ export default function Home() {
     });
 
     toast.promise(promise, {
-      loading: "Getting you on the waitlist... 🚀",
+      loading: "Cê tá quase lá... 🚀",
       success: (data) => {
         setName("");
         setEmail("");
-        return "🎉 Aee! Você agora está na lista exclusiva de espera da plataforma!";
+        return "🎉 Aee! agora cê está na lista de espera uai..";
       },
       error: (error) => {
         if (error === "Rate limited") {

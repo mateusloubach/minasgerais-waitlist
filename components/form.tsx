@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ChangeEvent } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaXTwitter, FaLinkedinIn  } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { EnhancedButton } from "@/components/ui/enhanced-btn";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
+import { TbBrandVercelFilled } from "react-icons/tb";
 
 interface FormProps {
   name: string;
@@ -62,17 +63,17 @@ export default function Form({
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
         <p>Para consultas, entre em contato pelo </p>
         <Link
-          href="https://x.com/blakssh"
+          href="https://www.linkedin.com/in/mateusloubach/"
           rel="noopener noreferrer"
           target="_blank">
-          <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
+          <FaLinkedinIn  className="h-4 w-4 transition-all duration-200 ease-linear hover:text-red-300" />
         </Link>
-        or
+        ou
         <Link
-          href="https://github.com/lakshaybhushan"
+          href="https://alternativaagency.studio"
           rel="noopener noreferrer"
           target="_blank">
-          <FaGithub className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />
+          <TbBrandVercelFilled  className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-green-200" />
         </Link>
       </motion.div>
     </motion.div>
